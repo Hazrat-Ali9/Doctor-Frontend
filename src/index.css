@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  box-sizing: border-box;
+  scroll-behavior: smooth;  
+  overflow-x: hidden;
+}
+h1{
+  font-size: 2.5vw;
+}
+p{
+  font-size: 1vw;
+}
+

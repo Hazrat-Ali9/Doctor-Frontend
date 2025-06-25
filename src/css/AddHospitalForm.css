@@ -1,0 +1,32 @@
+/* AddHospitalForm.css */
+.container {
+    max-width: 600px; /* Limit the width of the form */
+}
+
+h2 {
+    font-family: 'Arial', sans-serif; /* Set a custom font */
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.form-label {
+    font-weight: bold; /* Make the label bold */
+}
+
+.form-control {
+    border-radius: 0.25rem; /* Rounded corners for input fields */
+    border: 1px solid #ced4da; /* Light border color */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow on focus */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* Remove border */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}

@@ -1,0 +1,81 @@
+.navbar-container {
+  width: 70vw;
+  margin: 0 auto; /* Centers the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a75bb; /* Blue background */
+  padding: 15px;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.navbar-list li a.active {
+  font-weight: bold;
+}
+
+.appointment-btn .btn-outline {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.appointment-btn .btn-outline:hover {
+  background-color: white;
+  color: #2a75bb;
+  transition: 0.3s;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar-list {
+      flex-direction: column; /* Change the flex direction to column */
+      gap: 10px; /* Reduce gap between links */
+  }
+
+  .navbar-list li a {
+      font-size: 0.9rem; /* Decrease font size for smaller screens */
+  }
+
+  .appointment-btn .btn-outline {
+      font-size: 0.9rem; /* Adjust button font size */
+      padding: 6px 16px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+      width: 100vw; /* Make navbar full width on very small screens */
+  }
+
+  .navbar-list li a {
+      font-size: 0.8rem; /* Further decrease font size for very small screens */
+  }
+
+  .appointment-btn .btn-outline {
+      font-size: 0.8rem; /* Further adjust button font size */
+      padding: 5px 14px; /* Adjust button padding */
+      margin: 1rem 0 0 0;
+  }
+}

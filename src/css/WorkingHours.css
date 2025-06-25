@@ -1,0 +1,140 @@
+/* Container layout */
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.column {
+    flex: 1;
+    margin: 0 1vw;
+}
+
+/* First Column - Working Hours Card */
+.working-hours-container {
+    background-color: #1f619b;
+    color: #fff;
+    padding: 1.5vw;
+    border-radius: 0.8vw;
+}
+
+/* Title Styles */
+.working-hours-title {
+    font-size: 1.8vw;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+.hospital-info h3 {
+    font-size: 1.2vw;
+    margin-top: 1vw;
+    font-weight: bold;
+}
+
+.hospital-info p {
+    font-size: 1vw;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 1.5vw;
+}
+
+.phone-number {
+    font-size: 1.5vw;
+}
+
+.appointment-button {
+    margin-top: 1vw;
+    padding: 0.7vw 1vw;
+    color: #1f619b;
+    background-color: #fff;
+    border: 0.2vw solid #fff;
+    border-radius: 0.4vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.appointment-button:hover {
+    background-color: #fff;
+    color: #1f619b;
+}
+
+/* Second Column - Doctor Image */
+.doctor-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
+.doctor-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.8vw;
+}
+
+/* Third Column - Doctor Info */
+.doctor-info-container {
+    padding: 1.5vw;
+    color: #2c3e50;
+}
+
+.intro-title {
+    color: #1f619b;
+    font-weight: bold;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1vw;
+    margin-top: 0.5vw;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1vw;
+    line-height: 1.5;
+    margin-top: 1vw;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 5%; /* Add more padding on smaller screens */
+    }
+
+    .working-hours-title {
+        font-size: 5vw; /* Adjust title size for mobile */
+    }
+
+    .hospital-info h3 {
+        font-size: 4.5vw; /* Adjust hospital name size */
+    }
+
+    .hospital-info p,
+    .phone-number {
+        font-size: 4vw; /* Adjust text size for info */
+    }
+
+    .appointment-button {
+        font-size: 4vw; /* Adjust button size */
+        padding: 1vw 1vw; /* Adjust padding for button */
+    }
+
+    h2 {
+        font-size: 5vw; /* Adjust h2 size for doctor info */
+    }
+
+    .intro-title {
+        font-size: 3.5vw; /* Adjust intro title size */
+    }
+
+    p {
+        font-size: 3.5vw; /* Adjust paragraph size */
+    }
+}

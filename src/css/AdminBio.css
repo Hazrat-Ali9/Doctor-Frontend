@@ -1,0 +1,165 @@
+/* AdminBio.css */
+
+/* General container styling */
+.admin-bio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Form container for Admin Bio */
+  .bio-form {
+    width: 60%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  .bio-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling */
+  .form-group label {
+    font-size: 1.1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Input and textarea styling */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Buttons for removing items */
+  button[type="button"] {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #e60000;
+  }
+  
+  /* Add item button */
+  button[type="button"]:not(.remove-btn) {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button[type="button"]:not(.remove-btn):hover {
+    background-color: #218838;
+  }
+  
+  /* Submit button styling */
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Flexbox styling for rows */
+  .experience-row,
+  .education-row,
+  .service-row,
+  .specialization-row,
+  .language-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .experience-row input,
+  .education-row input,
+  .service-row input,
+  .specialization-row input,
+  .language-row input {
+    flex: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .bio-form {
+      width: 90%;
+    }
+  
+    .experience-row,
+    .education-row,
+    .service-row,
+    .specialization-row,
+    .language-row {
+      flex-direction: column;
+    }
+  
+    .experience-row input,
+    .education-row input,
+    .service-row input,
+    .specialization-row input,
+    .language-row input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bio-form {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .bio-form h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-group label {
+      font-size: 1rem;
+    }
+  
+    .form-control {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  

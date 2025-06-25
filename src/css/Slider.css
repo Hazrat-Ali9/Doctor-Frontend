@@ -1,0 +1,59 @@
+.each-slide-effect {
+    position: relative;
+    max-width: 100vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    color: white;
+    text-align: center;
+    padding: 2vw;
+    border-radius: 1vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-container h1 {
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.text-container h3 {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+.text-container p {
+    font-size: 1.8vw;
+    margin-bottom: 3vw;
+}
+
+.learn-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 1vw 2vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+}
+
+.slide-container {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

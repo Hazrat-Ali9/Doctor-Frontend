@@ -1,0 +1,29 @@
+.container {
+  max-width: 100%;
+  padding: 0 15px; /* Optional: add some padding */
+}
+
+.table {
+  width: 100%; /* Set table to occupy full width */
+  font-size: 14px;
+  border-collapse: collapse; /* Ensure borders collapse together */
+}
+
+.table th, .table td {
+  padding: 12px; /* Add padding for better spacing */
+  text-align: left; /* Align text to the left */
+}
+
+@media (max-width: 768px) {
+  .table {
+      font-size: 12px;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      display: block; /* Make table scrollable */
+  }
+
+  .table-responsive {
+      display: block; /* Ensures responsive behavior */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+  }
+}

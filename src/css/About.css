@@ -1,0 +1,76 @@
+.about-container {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100vw;
+  }
+  
+  .about-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .doctor-image {
+    width: 20vw;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  
+  .doctor-info {
+    flex: 1;
+  }
+  
+  .doctor-name {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .doctor-heading {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .doctor-experience {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .services-section,
+  .education-section,
+  .specialization-section,
+  .experience-section,
+  .languages-section,
+  .about-me-section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  h3 {
+    margin: 1rem 0;
+  }
+  
+  .services-list,
+  .experience-list,
+  .languages-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .education-item {
+    margin: 0.5rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .about-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .doctor-image {
+      width: 60vw;
+      margin-bottom: 1rem;
+    }
+  }
+  

@@ -1,0 +1,33 @@
+.timing-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start for better mobile view */
+}
+
+.timing-field h5 {
+    margin-bottom: 10px; /* Add some spacing below the heading */
+}
+
+.timing-field div {
+    width: 100%; /* Make sure each timing field takes the full width */
+}
+
+.timing-field div select,
+.timing-field div input {
+    width: 100%; /* Full width for select and input elements */
+    margin-bottom: 5px; /* Add spacing between input fields */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Less padding on mobile */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width on mobile */
+    }
+
+    .timing-field div {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+}

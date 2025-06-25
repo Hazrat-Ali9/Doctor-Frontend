@@ -1,0 +1,62 @@
+
+.previous-appointments-container {
+    padding: 20px;
+    color: #000; /* Set text color to white */
+}
+
+.appointments-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.appointments-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    gap: 20px;
+}
+
+.appointment-card {
+    background: #333; /* Card background */
+    border-radius: 8px;
+    overflow: hidden; /* Prevent overflow */
+    display: flex; /* Flex to align image and text */
+}
+
+.card-image-container {
+    flex: 1; /* Image takes up one part */
+}
+
+.card-text-container {
+    flex: 2; /* Text takes up two parts */
+    padding: 20px; /* Padding for text */
+}
+
+.appointment-image {
+    width: 100%; /* Make image responsive */
+    height: 100%; /* Keep aspect ratio */
+}
+
+.appointment-title {
+    margin: 0 0 10px 0; /* Margin for title */
+    color: #fff;
+}
+
+.appointment-description {
+    margin: 0; /* Reset margin for description */
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .appointments-grid {
+        grid-template-columns: 1fr; /* One column for mobile screens */
+    }
+
+    .appointment-card {
+        flex-direction: column; /* Stack image and text */
+    }
+
+    .card-image-container {
+        width: 100%; /* Full width for image */
+    }
+}

@@ -1,0 +1,60 @@
+.info-bar-container {
+  padding: 10px 0;
+}
+
+.icon-box {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-right: 1rem;
+  border: none;
+}
+
+
+
+p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+p.mb-0 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .info-bar-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .icon-box {
+      width: auto;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 0.5vw;
+  }
+
+  .icon {
+      font-size: 24px;
+      margin-right: 1rem;
+  }
+
+  p {
+      font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-bar-container {
+      align-items: flex-start;
+  }
+
+  .icon {
+      font-size: 10px;
+  }
+
+  p {
+      font-size: 0.7rem;
+  }
+}

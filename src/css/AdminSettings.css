@@ -1,0 +1,182 @@
+/* Admin Settings Container */
+.admin-settings-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Settings Form */
+  .settings-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Error Message */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Hospital Timing Section */
+  .timing-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .timing-row > div {
+    flex: 1;
+  }
+  
+  .timing-day input,
+  .timing-open-time input,
+  .timing-close-time input {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  /* Open and Close Time Fields */
+  .timing-open-time,
+  .timing-close-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px; /* Increased width for time fields */
+  }
+  
+  .timing-day,
+  .timing-open-time,
+  .timing-close-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+  }
+  
+  button.add-btn,
+  button.remove-btn {
+    width: auto; /* Auto width for add and remove buttons */
+  }
+  
+  /* Time Picker */
+  .timing-open-time input,
+  .timing-close-time input {
+    width: 100%; /* Ensure full width of the time input fields */
+  }
+  
+  .timing-open-time,
+  .timing-close-time {
+    width: auto; /* Adjust width to fit the content */
+  }
+  
+  /* Label Adjustments */
+  .timing-open-time label,
+  .timing-close-time label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Footer Text Section */
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+  /* Add and Remove Buttons */
+  button.add-btn {
+    background-color: #28a745;
+  }
+  
+  button.remove-btn {
+    background-color: #dc3545;
+  }
+  
+  button.add-btn:hover {
+    background-color: #218838;
+  }
+  
+  button.remove-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .add-btn,
+  .remove-btn {
+    padding: 8px 15px;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* General Button Styles */
+  button.submit-btn {
+    background-color: #007bff;
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  button.submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
