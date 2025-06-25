@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
 import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
-
+// Adress Bar
 const AddressBar = () => {
   const data = useContext(AppContext);
   const {setting} = data;
