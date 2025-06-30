@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import '../css/About.css'; // Import your CSS file
 import Pic from "../assets/images/myPic.jpg"; // Update this if the image is dynamic
 import { AppContext } from '../context/AppContext';
-
+// about
 const About = () => {
   const [bioData, setBioData] = useState(null);
   const {API} = useContext(AppContext);
