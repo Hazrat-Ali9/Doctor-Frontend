@@ -5,7 +5,7 @@ import "../css/Contact.css"; // Import your CSS file
 import { FaClock, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { AppContext } from "../context/AppContext";
 import { contactFormSubmission } from "../services/contactServices";
-
+// Contact
 const Contact = () => {
   const { openModal } = useContext(AppContext);
   const formik = useFormik({
